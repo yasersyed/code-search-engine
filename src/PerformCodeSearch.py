@@ -24,7 +24,7 @@ def search_code(query, top_n=5):
 #explain code
 def explain_code(code):
     # Use Ollama to generate code explanation
-    explanation = ollama.generate(model='codestral-mamba-2407', input_text=code)
+    explanation = ollama.generate('codestral', code)
     return explanation
 
 
